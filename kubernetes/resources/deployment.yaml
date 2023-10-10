@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: streamwizard-backend-checkaction
-          image: ghcr.io/streamerbuddybot/checkaction:e0d16f83617e058f161d557c6853d8bdf169941f
+          image: ghcr.io/streamerbuddybot/checkaction:75f6786d0a76cbc38ec04c299a57823dc2166919
           ports:
             - containerPort: 80
           envFrom:

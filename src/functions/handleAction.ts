@@ -12,7 +12,7 @@ export default async function (data: IActionRequest): Promise<string> {
 
   switch (action) {
     case "spotify":
-      const spotifyPayload = new spotifyRequest({ action: args, channelID, message, userID, userinput });
+      const spotifyPayload = new spotifyRequest({ action: args, channelID, message, userID, userinput, username });
       const SpotifyResponse = await spotifyService(spotifyPayload);
 
       console.log(message)
